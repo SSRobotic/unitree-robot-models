@@ -1,127 +1,38 @@
-# Unitree ROS & Models · SSRobotic Collection
+<p align="center"><img src="assets/ssrobotics-logo.jpg" alt="SSRobotics original logo" width="240"></p>
 
-> **This collection has moved into [Humanoid Robot Hub](https://github.com/SSRobotic/humanoid-robot-hub).**
-> Browse the consolidated code: [collections/unitree/ros](https://github.com/SSRobotic/humanoid-robot-hub/tree/main/collections/unitree/ros) · [Search resources](https://ssrobotic.github.io/humanoid-robot-hub/)
+# 🦾 Unitree Robot Models · SSRobotics
 
-Robot descriptions, Gazebo packages and joint controllers; includes G1 / H1 models.
+**Part of [Humanoid Robot Hub](https://github.com/SSRobotic/humanoid-robot-hub)** · [🔎 Search the ecosystem](https://ssrobotic.github.io/humanoid-robot-hub/) · [👤 Follow SSRobotic](https://github.com/SSRobotic)
 
-Curated and organized by **SSRobotic — Robotics Engineer & Open-source Curator**. Original source: [unitreerobotics](https://github.com/unitreerobotics/unitree_ros). The original code, documentation and license notices retain their respective authorship.
+A1 / Aliengo / AliengoZ1 model snapshots and legacy ROS / Gazebo packages; modern humanoid models are linked upstream.
 
-## What this collection provides
+Curated and organized by **SSRobotic — Robotics Engineer & Open-source Curator**. Original platform code and documentation remain credited to [unitreerobotics](https://github.com/unitreerobotics/unitree_ros).
 
-Robot descriptions, Gazebo packages and joint controllers; includes G1 / H1 models.
+## 🛠️ What is inside
 
-The Hub contains a snapshot of this repository at `54f77e229ff68f594b874dddc9877b91d3150de1`. This repository is retained as an archived reference so previous links and history remain available. Updates to the curated collection belong in the Hub.
+This repository contains the existing Unitree Robot Models source collection, together with its original history and notices. The [original documentation](UPSTREAM_README.md) describes installation, examples and dependencies. Use the documented robot generation and software versions.
 
----
+## 🚀 Start here
 
-## Original documentation
+1. Read [UPSTREAM_README.md](UPSTREAM_README.md) and inspect the source tree.
+2. Check hardware compatibility, middleware and the dependency versions documented by the original project.
+3. Build in the project-specific workspace. This collection has its own setup; the Hub provides navigation and discovery.
 
-# Introduction
-Here are the ROS simulation packages for Unitree robots, You can load robots and joint controllers in Gazebo, so you can perform low-level control (control the torque, position and angular velocity) of the robot joints. Please be aware that the Gazebo simulation cannot do high-level control, namely walking. Aside from these simulation functions, you can also control your real robots in ROS with the [unitree_ros_to_real](https://github.com/unitreerobotics/unitree_ros_to_real) packages. For real robots, you can do high-level and low-level control using our ROS packages.
+## 🔗 Connected directories
 
-## Packages:
-Robot description:
+[🦾 Models](https://github.com/SSRobotic/humanoid-models) · [🌐 Simulation](https://github.com/SSRobotic/humanoid-simulation) · [🔌 SDKs](https://github.com/SSRobotic/humanoid-hardware-sdks) · [📡 ROS](https://github.com/SSRobotic/humanoid-ros2) · [👁️ Vision](https://github.com/SSRobotic/humanoid-vision) · [🤏 Manipulation](https://github.com/SSRobotic/humanoid-manipulation)
 
-* [`a1`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/a1_description)
-* [`aliengo`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/aliengo_description)
-* [`aliengoZ1`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/aliengoZ1_description)
-* [`b1`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/b1_description)
-* [`b2`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/b2_description)
-* [`b2w`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/b2w_description)
-* [`dexterous_hand`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/dexterous_hand_description)
-* [`g1`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/g1_description)
-* [`go1`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/go1_description)
-* [`go2`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/go2_description)
-* [`go2w`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/go2w_description)
-* [`h1_2`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/h1_2_description)
-* [`h1`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/h1_description)
-* [`laikago`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/laikago_description)
-* [`z1`](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/z1_description)
+[🏠 Main Hub](https://github.com/SSRobotic/humanoid-robot-hub) · [🗂️ All repositories](https://github.com/SSRobotic?tab=repositories) · [💡 Suggest a resource](https://github.com/SSRobotic/humanoid-robot-hub/issues/new/choose)
 
-Robot and joints controller:
-* `unitree_controller`
-* `z1_controller`
+## 📚 Source & attribution
 
-Simulation related:
-* `unitree_gazebo`
-* `unitree_legged_control`
+- Original source: [https://github.com/unitreerobotics/unitree_ros](https://github.com/unitreerobotics/unitree_ros).
+- Consolidated source snapshot: `54f77e229ff68f594b874dddc9877b91d3150de1`.
+- Historical snapshot in the Hub: [collections/unitree/ros](https://github.com/SSRobotic/humanoid-robot-hub/tree/main/collections/unitree/ros).
+- Current collection: [SSRobotic/unitree-robot-models](https://github.com/SSRobotic/unitree-robot-models).
 
-# Dependencies
-* [ROS](https://www.ros.org/) Melodic or ROS Kinetic (has not been tested)
-* [Gazebo8](http://gazebosim.org/)
-* [unitree_legged_msgs](https://github.com/unitreerobotics/unitree_ros_to_real): `unitree_legged_msgs` is a package under [unitree_ros_to_real](https://github.com/unitreerobotics/unitree_ros_to_real).
-# Build
-<!-- If you would like to fully compile the `unitree_ros`, please run the following command to install relative packages. -->
+Existing license files and copyright notices are retained. Original SDKs, models, third-party libraries and binaries keep their respective license terms. The SSRobotics logo is supplied by its creator.
 
-For ROS Melodic:
-```
-sudo apt-get install ros-melodic-controller-interface  ros-melodic-gazebo-ros-control ros-melodic-joint-state-controller ros-melodic-effort-controllers ros-melodic-joint-trajectory-controller
-```
-For ROS Kinetic:
-```
-sudo apt-get install ros-kinetic-controller-manager ros-kinetic-ros-control ros-kinetic-ros-controllers ros-kinetic-joint-state-controller ros-kinetic-effort-controllers ros-kinetic-velocity-controllers ros-kinetic-position-controllers ros-kinetic-robot-controllers ros-kinetic-robot-state-publisher ros-kinetic-gazebo8-ros ros-kinetic-gazebo8-ros-control ros-kinetic-gazebo8-ros-pkgs ros-kinetic-gazebo8-ros-dev
-```
+## 🙌 Follow the collection
 
-And open the file `unitree_gazebo/worlds/stairs.world`. At the end of the file:
-```
-<include>
-    <uri>model:///home/unitree/catkin_ws/src/unitree_ros/unitree_gazebo/worlds/building_editor_models/stairs</uri>
-</include>
-```
-Please change the path of `building_editor_models/stairs` to the real path on your PC.
-
-Then you can use catkin_make to build:
-```
-cd ~/catkin_ws
-catkin_make
-```
-
-If you face a dependency problem, you can just run `catkin_make` again.
-
-# Detail of Packages
-## unitree_legged_control:
-It contains the joints controllers for Gazebo simulation, which allows users to control joints with position, velocity and torque. Refer to "[unitree_ros/unitree_controller/src/servo.cpp](https://github.com/unitreerobotics/unitree_ros/blob/master/unitree_controller/src/servo.cpp)" for joint control examples in different modes.
-
-## The description of robots:
-Namely the description of Go1, A1, Aliengo and Laikago. Each package includes mesh, urdf and xacro files of robot. Take Laikago for example, you can check the model in Rviz by:
-```
-roslaunch laikago_description laikago_rviz.launch
-```
-
-## unitree_gazebo & unitree_controller:
-You can launch the Gazebo simulation with the following command:
-```
-roslaunch unitree_gazebo normal.launch rname:=a1 wname:=stairs
-```
-Where the `rname` means robot name, which can be `laikago`, `aliengo`, `a1` or `go1`. The `wname` means world name, which can be `earth`, `space` or `stairs`. And the default value of `rname` is `laikago`, while the default value of `wname` is `earth`. In Gazebo, the robot should be lying on the ground with joints not activated.
-
-### 1. Stand controller
-After launching the gazebo simulation, you can start to control the robot:
-```
-rosrun unitree_controller unitree_servo
-```
-
-And you can add external disturbances, like a push or a kick:
-```
-rosrun unitree_controller unitree_external_force
-```
-### 2. Position and pose publisher
-Here we demonstrated how to control the position and pose of robot without a controller, which should be useful in SLAM or visual development.
-
-Then run the position and pose publisher in another terminal:
-```
-rosrun unitree_controller unitree_move_kinetic
-```
-The robot will turn around the origin, which is the movement under the world coordinate frame. And inside of the source file [move_publisher.cpp](https://github.com/unitreerobotics/unitree_ros/blob/master/unitree_controller/src/move_publisher.cpp), we also provide the method to move using the robot coordinate frame. You can change the value of `def_frame` to `coord::ROBOT` and run the catkin_make again, then the `unitree_move_publisher` will move robot under its own coordinate frame.
-
-## z1_controller
-
-You can launch the z1 Gazebo simulation with the following command:
-
-```
-roslaunch unitree_gazebo z1.launch
-```
-
-After launching the gazebo simulation, you can start to control the z1 robot by z1_sdk.  
-see [z1_documentation](https://dev-z1.unitree.com)
+If this resource helps your work, follow [SSRobotic](https://github.com/SSRobotic) for future robotics resources and [star the main Hub](https://github.com/SSRobotic/humanoid-robot-hub) to bookmark the ecosystem.
