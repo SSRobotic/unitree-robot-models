@@ -1,3 +1,22 @@
+# Unitree ROS & Models · SSRobotic Collection
+
+> **This collection has moved into [Humanoid Robot Hub](https://github.com/SSRobotic/humanoid-robot-hub).**
+> Browse the consolidated code: [collections/unitree/ros](https://github.com/SSRobotic/humanoid-robot-hub/tree/main/collections/unitree/ros) · [Search resources](https://ssrobotic.github.io/humanoid-robot-hub/)
+
+Robot descriptions, Gazebo packages and joint controllers; includes G1 / H1 models.
+
+Curated and organized by **SSRobotic — Robotics Engineer & Open-source Curator**. Original source: [unitreerobotics](https://github.com/unitreerobotics/unitree_ros). The original code, documentation and license notices retain their respective authorship.
+
+## What this collection provides
+
+Robot descriptions, Gazebo packages and joint controllers; includes G1 / H1 models.
+
+The Hub contains a snapshot of this repository at `54f77e229ff68f594b874dddc9877b91d3150de1`. This repository is retained as an archived reference so previous links and history remain available. Updates to the curated collection belong in the Hub.
+
+---
+
+## Original documentation
+
 # Introduction
 Here are the ROS simulation packages for Unitree robots, You can load robots and joint controllers in Gazebo, so you can perform low-level control (control the torque, position and angular velocity) of the robot joints. Please be aware that the Gazebo simulation cannot do high-level control, namely walking. Aside from these simulation functions, you can also control your real robots in ROS with the [unitree_ros_to_real](https://github.com/unitreerobotics/unitree_ros_to_real) packages. For real robots, you can do high-level and low-level control using our ROS packages.
 
